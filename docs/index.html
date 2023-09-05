@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parabola.io</title>
+
+    <link rel="icon" href="./assets/img/iconfinder-spaceship-2927564_112160 (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+    
+<script defer src="main.js"></script></head>
+<body>
+
+
+    <div class="menu">
+
+        <aside class="sidebar">
+            <div id="leftside-navigation" class="nano">
+              <ul class="nano-content">
+                <li class="menuTop">
+                    <img src="./assets/img/60instagramhighlighticons59_112030.png" > <h2 class="textMenuTop">Tiro Parabólico</h2> </img>
+                </li>
+                <li id="vistaInit">
+                  <a href="#"><i class="fa fa-dashboard"></i><span>Vista</span></a>
+                </li>
+                <li class="sub-menu">
+                  <a href="javascript:void(0);"><i class="fa fa-cogs"></i><span>Parametros</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                  <ul>
+          
+                    <li class="subSeccion"><a href="#"> Valores </a>
+                    </li>
+                    <li class="subSeccion"><a href="#"> Fórmulas y sustitución </a>
+                    </li>
+
+                  </ul>
+                </li>
+                <li class="sub-menu">
+                  <a href="javascript:void(0);"><i class="fa fa-table"></i><span>Tablas</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                  <ul>
+                    <li class="subSeccion"><a href="#">Resultado en tablas</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sub-menu">
+                  <a href="javascript:void(0);"><i class="fa fa fa-tasks"></i><span>Herramientas</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                  <ul>
+                    <li class="subSeccion"><a href="#">Editar gráfica</a>
+                    </li>
+                  </ul>
+                </li>
+              <!-- <li class="sub-menu">
+                <a href="javascript:void(0);"><i class="fa fa-envelope"></i><span>Mail</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                <ul>
+                  <li><a href="mail-inbox.html">Inbox</a>
+                  </li>
+                  <li><a href="mail-compose.html">Compose Mail</a>
+                  </li>
+                </ul>
+              </li> -->
+                
+              </ul>
+            </div>
+          </aside>
+
+
+    </div>
+
+    <div class="datos" id="valores">
+
+        <div class="entrada">
+            <label for="">Velocidad Inicial:</label> <br>
+            <input type="number" id="velInit" min="0" max="300000000">
+            <br> <br>
+            <label for="">Ángulo:</label> <br>
+            <input type="number" id="anglInit" min="0" max="90" >
+            <br> <br>
+            <label for="">tiempo de muestra:</label> <br>
+            <input type="number" id="timeInit" min="0.1" max="1" step="0.1" >
+            <br> <br>
+            <button id="start">Calcular</button>
+        </div>
+
+    </div>
+
+    <div class="tabla" id="tablaInit">
+
+      <table class="rwd-table" id="rwd-table"> 
+        <img src="./assets/img/graph_business_diagram_report_statistics_analytics_icon_226215.png" class="imgIniTable">
+      </table>
+
+      <div class="infoExtra">
+        <ul>
+          <li>
+            <h3>Tiempo de subida:</h3>
+            <p class="infConst" >ejemplo</p>
+          </li>
+          <li>
+            <h3>Tiempo de vuelo:</h3>
+            <p class="infConst" >ejemplo</p>
+          </li>
+          <li>
+            <h3>Distancia máxima X:</h3>
+            <p class="infConst" >ejemplo</p>
+          </li>
+          <li>
+            <h3>Distancia máxima Y:</h3>
+            <p class="infConst" >ejemplo</p>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+
+    <!-- Barra de Navegación -->
+
+    <div id="navegacion">
+      <ul>
+          <li> <a href="#"> Velocidad V0: <input type="number" id="velInitDos" min="0" max="300000000"> </a> </li>
+          <li> <a href="#"> Ángulo: <input type="number" id="anglInitDos" min="0" max="90" > </a> </li>
+          <li> <a href="#"> Tiempo: <input type="number" id="timeInitDos" min="0.1" max="1" step="0.1" > </a> </li>
+          <li> <a href="#">  <button id="startDos">Calcular</button> </a> </li>
+      </ul>
+    </div>
+
+
+
+    <div class="grafics" id="grafic" >
+        <canvas id="speedChart"></canvas>
+    </div>
+
+    <script src="./assets/js/grafics.js"></script>
+    <script src="./assets/js/change_view.js"></script>
+    
+</body>
+</html>
