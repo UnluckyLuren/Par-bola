@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+:root {
+  --bgnormal: rgba(0, 0, 0, 0.514);
+}
+
 /* Graficas */
 
 
@@ -68,7 +72,8 @@
 
 body {
   color: #5D5F63;
-  background-image: linear-gradient(180deg, #60479f 0, #3f337c 25%, #1f1f59 50%, #030937 75%, #00001b 100%);;
+  background-image: linear-gradient(180deg, #60479f 0, #3f337c 25%, #1f1f59 50%, #030937 75%, #00001b 100%);
+  background-size: cover;
   font-family: "Open Sans", sans-serif;
   padding: 0;
   margin: 0;
@@ -357,7 +362,102 @@ body {
   color: white;
 }
 
+/* SUS */
 
+.sus {
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  width: 70vw;
+  height: max-content;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: var(--bgnormal);
+}
 
+.listSus {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.listSus li {
+  margin: 0;
+}
+
+.listSus li img {
+  margin: 0;
+  width: 2em;
+  height: 2em;
+  margin-left: 1em;
+  /* position: absolute; */
+}
+
+.encSus img:hover {
+  padding: 0.1em;
+}
+
+.encSus {
+  display: flex;
+  align-items: center;
+}
+
+.resultSus {
+  width: inherit;
+  height: 100%;
+  content: "";
+  background-color: transparent;
+  background-image: url("../img/descarga.jpg");
+  display: none;
+}
+
+.activeSus {
+  padding: 1em;
+  border: 5px solid black;
+  border-radius: 1em;
+  display: block;
+}
+
+.suscalc {
+  display: flex;
+  position: relative;
+  bottom: 2em;
+  flex-direction: row;
+  width: 100%;
+}
+
+.suscalc li {
+  margin-left: 15%;
+}
+
+.suscalc li div p{
+  color: grey;
+  font-size: large;
+  font-family: cursive;
+}
+
+.suscalc li div {
+  position: relative;
+  right: 1.5em;
+}
+
+.suscalc li p{
+  color: #00001b;
+  font-size: x-large;
+}
+
+.reSusData, .reSusFin {
+  color: blue;
+}
+
+.imgSusView {
+  transform: rotate(-90deg);
+  transition: all 0.1s 0.1s;
+}
+
+.rotateSus {
+  transform: rotate(0deg);
+}
 
 
